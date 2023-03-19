@@ -1,6 +1,7 @@
 const API_KEY = 'f81980ff410e46f422d64ddf3a56dddd';
 const URL = 'https://api.themoviedb.org/3';
 
+
 const requests = {
     fetchTrending: `${URL}/trending/all/week?api_key=${API_KEY}&language=en-US`,
     fetchNetflixOriginals: `${URL}/discover/tv?api_key=${API_KEY}&with_networks=213`,
@@ -13,3 +14,5 @@ const requests = {
 };
 
 export default requests;
+
+export const imageBaseUrl = "https://image.tmdb.org/t/p/original/";

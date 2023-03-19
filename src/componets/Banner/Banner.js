@@ -28,36 +28,14 @@ const Banner = () => {
       }}
     >
       <div className="banner__contents">
-        <h1 className="banner__title">Movie Name</h1>
+        <h1 className="banner__title">{movie?.title || movie?.name || movie?.original_name}</h1>
         <div className="banner__buttons">
           <button className="banner__button">Play</button>
           <button className="banner__button">My List</button>
         </div>
         <div className="banner__description">
           {truncate(
-            `Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, tenetur
-          porro veritatis ut asperiores expedita ad officia nulla ipsam
-          laboriosam est laudantium tempore labore quod dolore amet enim quas
-          repellat totam voluptate necessitatibus cum. Velit provident
-          consectetur nam obcaecati omnis, consequatur odio alias ipsa
-          reprehenderit perferendis adipisci assumenda blanditiis commodi nobis
-          explicabo cumque inventore dolore. Quos nostrum fugit cupiditate
-          doloremque numquam ipsum aliquam ex laudantium temporibus dolores, at
-          ratione! Quod nemo, unde facere saepe ipsam iusto nesciunt? Nulla
-          dolorum asperiores sint nemo odio aliquid autem quaerat minus
-          assumenda voluptates optio quibusdam minima alias repellendus, unde
-          provident incidunt at odit ipsa enim. Distinctio nisi culpa
-          reprehenderit magni nobis alias ullam, officia itaque repellat,
-          exercitationem earum eveniet modi, praesentium consectetur iusto sint?
-          Sunt rerum, maiores harum earum quod ullam ad eos est corporis natus,
-          magni impedit a incidunt ea ducimus at enim aut molestiae nulla
-          expedita fugit? Atque exercitationem debitis odio ullam earum facilis?
-          Ullam modi eligendi amet voluptate veritatis. Minima enim incidunt
-          voluptate magnam assumenda inventore blanditiis amet rem, consequatur
-          recusandae nostrum earum ratione, iure iusto praesentium quia?
-          Explicabo, autem? Unde quibusdam sequi sunt accusamus cum dolorem
-          autem odit. Molestias saepe mollitia, animi unde sunt beatae? Aliquid
-          officia officiis commodi`,
+            movie?.overview,
             150
           )}
         </div>
