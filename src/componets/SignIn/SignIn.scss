@@ -1,0 +1,44 @@
+$red: #e50914;
+.sign-in {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+  align-items: center;
+
+  &__link {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  &__new {
+    color: rgb(153, 153,153);
+  }
+  &__inner {
+    max-width: 20%;
+    margin: 0 auto;
+    background: rgb(0, 0, 0, 0.65);
+    padding: 60px 65px;
+  }
+  &__form {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+  input {
+    padding: 10px;
+    border-radius: 5px;
+  }
+  &__button {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: $red;
+    color: white;
+    transition: transform 0.3s linear;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

@@ -1,6 +1,10 @@
 .banner {
     height: 90vh;
     background-size: cover;
+    overflow-x: hidden;
+    @media screen and (max-width: 576px){
+        height: 60vh;
+    }
     &__contents {
         position: relative;
         color: white;
